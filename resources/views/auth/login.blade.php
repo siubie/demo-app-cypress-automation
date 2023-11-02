@@ -48,7 +48,7 @@
                                         <label for="email">Email</label>
                                         <input type="email" name="email" value="{{ old('email') }}"
                                             class="form-control @error('email') is-invalid @enderror"
-                                            placeholder="Masukkan Alamat Email">
+                                            placeholder="Masukkan Alamat Email" data-id="email">
                                         @error('email')
                                             <div class="invalid-feedback">{{ $message }}</div>
                                         @enderror
@@ -65,13 +65,14 @@
                                         <!-- <label class="font-weight-bold text-uppercase">Password</label> -->
                                         <input type="password" name="password"
                                             class="form-control @error('password') is-invalid @enderror"
-                                            placeholder="Masukkan Password">
+                                            placeholder="Masukkan Password" data-id="password">
                                         @error('password')
                                             <div class="invalid-feedback">{{ $message }}</div>
                                         @enderror
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4"
+                                        data-id="submit">
                                             Login
                                         </button>
                                     </div>
